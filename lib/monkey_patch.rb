@@ -62,3 +62,7 @@ module MonkeyPatch
     end
   end
 end
+
+if defined?(Rails) && Rails::VERSION::MAJOR >= 3
+  require 'monkey_patch/railtie'
+end
