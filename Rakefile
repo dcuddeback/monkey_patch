@@ -14,13 +14,13 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "monkey_patch"
-  gem.homepage = "http://github.com/dcuddeback/monkey_patch"
-  gem.license = "MIT"
-  gem.summary = %Q{Manage monkey patches for installed gems}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "david@identified.com"
-  gem.authors = ["David Cuddeback"]
+  gem.name        = "monkey_patch"
+  gem.homepage    = "http://github.com/dcuddeback/monkey_patch"
+  gem.license     = "MIT"
+  gem.summary     = %Q{Manage monkey patches for installed gems}
+  gem.description = %Q{Manage monkey patches for installed gems}
+  gem.email       = "david@identified.com"
+  gem.authors     = ["David Cuddeback"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
