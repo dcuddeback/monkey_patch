@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{monkey_patch}
-  s.version = "0.1.0"
+  s.name = "monkey_patch"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Cuddeback"]
-  s.date = %q{2011-08-30}
-  s.description = %q{Manage monkey patches for installed gems}
-  s.email = %q{david@identified.com}
+  s.date = "2011-10-03"
+  s.description = "Manage monkey patches for installed gems"
+  s.email = "david@identified.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -27,14 +27,15 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/monkey_patch.rb",
     "lib/monkey_patch/railtie.rb",
+    "monkey_patch.gemspec",
     "spec/monkey_patch_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/dcuddeback/monkey_patch}
+  s.homepage = "http://github.com/dcuddeback/monkey_patch"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.4.2}
-  s.summary = %q{Manage monkey patches for installed gems}
+  s.rubygems_version = "1.8.10"
+  s.summary = "Manage monkey patches for installed gems"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
