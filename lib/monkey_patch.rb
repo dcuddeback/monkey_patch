@@ -58,7 +58,11 @@ module MonkeyPatch
     private
 
     def find_gem(name)
-      Gem.searcher.find(name)
+      if Gem::Specification.respond_to?(:find_all_by_name)
+        Gem::Specification.find_all_by_name(name.to_s).first
+      else
+        Gem.searcher.find(name)
+      end
     end
   end
 end
