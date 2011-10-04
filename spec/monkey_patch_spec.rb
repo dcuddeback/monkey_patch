@@ -11,6 +11,14 @@ describe MonkeyPatch do
       }
     end
 
+    let(:patch_for_hyphenated_gem_name) do
+      lambda {
+        MonkeyPatch.for('a-gem', '0.0.2') do |mp|
+          mp.announce("testing MonkeyPatch#for")
+        end
+      }
+    end
+
     let(:patch_for_wrong_version) do
       lambda {
         MonkeyPatch.for(:rspec, "0") do |mp|
@@ -49,6 +57,12 @@ describe MonkeyPatch do
           subject.call
         end
       end
+    end
+
+    context "with hyphenated gem name" do
+      subject { patch_for_hyphenated_gem_name }
+
+      it { should_not raise_error }
     end
 
     context "with incorrect gem version" do

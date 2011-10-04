@@ -61,7 +61,7 @@ module MonkeyPatch
       if Gem::Specification.respond_to?(:find_all_by_name)
         Gem::Specification.find_all_by_name(name.to_s).first
       else
-        Gem.searcher.find(name)
+        Gem.source_index.find_name(name.to_s).first
       end
     end
   end
