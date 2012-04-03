@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{monkey_patch}
-  s.version = "0.1.4"
+  s.version = "0.1.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{David Cuddeback}]
-  s.date = %q{2012-01-16}
+  s.date = %q{2012-04-03}
   s.description = %q{Manage monkey patches for installed gems}
   s.email = %q{david@identified.com}
   s.extra_rdoc_files = [
